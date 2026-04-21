@@ -40,7 +40,7 @@
 
 1.克隆项目
 git clone https://github.com/Yangcancan0211/vue3-admin-template
-cd mall-management-system
+cd vue3-admin-template
 
 2.安装依赖
 npm install
