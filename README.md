@@ -14,17 +14,21 @@
 
 ## 项目结构
 
-* **src/** - 源代码目录
-    * **api/** - API 接口统一管理
-    * **axios.js** - Axios 拦截器与封装
-    * **components/** - 公共业务组件
-    * **layout/** - 整体页面布局
-    * **router/** - 路由与权限守卫
-    * **stores/** - Pinia 状态仓库
-    * **views/** - 业务功能页面
-* **.env.production** - 生产环境配置文件
-* **vite.config.js** - Vite 构建配置
-
+```text
+├── src/
+│   ├── api/         # 接口请求模块
+│   ├── assets/       # 静态资源 (图片、样式)
+│   ├── axios.js/     # Axios 封装与拦截器
+│   ├── components/   # 公共组件 (SKU、上传等)
+│   ├── layout/       # 页面整体框架布局
+│   ├── router/       # 路由配置与权限守卫
+│   ├── stores/       # Pinia 状态管理
+│   └── views/        # 业务页面 (商品、订单等)
+├── .env.development/ # 开发环境变量
+├── .env.production/  # 生产环境变量
+├── vite.config.js/   # Vite 核心配置
+└── package.json/     # 项目依赖与脚本
+```
 ## 快速开始
 
 ### 环境准备
