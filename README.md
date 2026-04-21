@@ -13,20 +13,20 @@
 - 样式: Windi CSS
 
 ## 项目结构
+
 ├── src
-│   ├── api          # 接口请求统一管理 (axios 实例及具体模块接口)
-│   ├── assets       # 静态资源 (图片、全局样式)
-│   ├── axios.js     # 网络请求封装 (拦截器、Token 校验、加载条)
-│   ├── components   # 公共业务组件 (图标选择、图片上传、SKU规格组件)
-│   ├── layout       # 页面整体框架布局 (侧边栏、顶栏、标签导航)
-│   ├── router       # 路由配置 (包含动态路由权限校验逻辑)
-│   ├── stores       # Pinia 状态管理 (用户信息、侧边栏状态、持久化配置)
-│   └── views        # 业务页面模块 (商品管理、订单管理、权限管理等)
+│   ├── api          # 接口请求模块
+│   ├── assets       # 静态资源 (图片、样式)
+│   ├── axios.js     # Axios 封装与拦截器
+│   ├── components   # 公共组件 (SKU、上传等)
+│   ├── layout       # 页面整体框架布局
+│   ├── router       # 路由配置与权限守卫
+│   ├── stores       # Pinia 状态管理
+│   └── views        # 业务页面 (商品、订单等)
 ├── .env.development # 开发环境变量
-├── .env.production  # 生产环境变量 (GitHub Pages 部署配置)
-├── index.html       # 入口 HTML
-├── vite.config.js   # Vite 核心配置 (含 base 路径及反向代理)
-└── package.json     # 项目依赖及脚本命令
+├── .env.production  # 生产环境变量
+├── vite.config.js   # Vite 核心配置
+└── package.json     # 项目依赖与脚本
 
 ## 快速开始
 
