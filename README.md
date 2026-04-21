@@ -76,7 +76,7 @@ VITE_USE_MOCK = false
 
 - 生产环境(.env.production)
 # API 基础地址
-VITE_API_BASE_URL = [https://api.yourdomain.com](http://ceshi13.dishait.cn)
+VITE_API_BASE_URL = http://ceshi13.dishait.cn
 
 # 应用标题
 VITE_APP_TITLE = 商城管理系统
