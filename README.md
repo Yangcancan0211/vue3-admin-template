@@ -5,7 +5,7 @@
 ## 技术栈
 
 - 核心框架: Vue 3.5.31 
-- 构建工具: Vite 8.0.3
+- 构建工具: Vite 6.0.3
 - 路由管理: Vue Router 5.0.4
 - 状态管理: Pinia 3.0.4
 - UI组件库: ElementPlus
@@ -16,7 +16,7 @@
 
 ```text
 ├── src/
-│   ├── api/         # 接口请求模块
+│   ├── api/          # 接口请求模块
 │   ├── assets/       # 静态资源 (图片、样式)
 │   ├── axios.js/     # Axios 封装与拦截器
 │   ├── components/   # 公共组件 (SKU、上传等)
@@ -24,10 +24,10 @@
 │   ├── router/       # 路由配置与权限守卫
 │   ├── stores/       # Pinia 状态管理
 │   └── views/        # 业务页面 (商品、订单等)
-├── .env.development/ # 开发环境变量
-├── .env.production/  # 生产环境变量
-├── vite.config.js/   # Vite 核心配置
-└── package.json/     # 项目依赖与脚本
+├── .env.development  # 开发环境变量
+├── .env.production   # 生产环境变量
+├── vite.config.js    # Vite 核心配置
+└── package.json      # 项目依赖与脚本
 ```
 ## 快速开始
 
@@ -76,10 +76,21 @@ VITE_USE_MOCK = false
 
 - 生产环境(.env.production)
 # API 基础地址
-VITE_API_BASE_URL = https://api.yourdomain.com
+VITE_API_BASE_URL = [https://api.yourdomain.com](http://ceshi13.dishait.cn)
 
 # 应用标题
 VITE_APP_TITLE = 商城管理系统
 
 # 是否开启 Mock
 VITE_USE_MOCK = false
+## ❓ 常见问题
+
+### 1. 生产环境登录无反应 / 跨域报错
+由于 GitHub Pages 强制使用 HTTPS，而本项目接口服务器为 HTTP 协议，浏览器会触发“混合内容”拦截。
+**解决方法：**
+- 在浏览器地址栏左侧点击“网站设置”或“圆圈i图标”。
+- 找到 **“不安全内容” (Insecure content)**。
+- 选择 **“允许” (Allow)**，然后刷新页面即可正常登录。
+
+### 2. 页面刷新 404
+本项目已在 `router/index.js` 中处理了动态路由拦截，确保生产环境刷新页面时能正确重定向至 404 逻辑。
